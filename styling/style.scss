@@ -5,10 +5,12 @@ section{
 
 .section1{
     background-color: greenyellow;
+    min-height: 100vh;
 }
 
 .section2{
     background-color: blue;
+    min-height: 100vh;
 }
 
 
@@ -31,7 +33,7 @@ aside{
 }
 
 .section2{
-    background-color: blue;
+    background-color: rgb(159, 159, 201);
     position: relative;
 }
 
@@ -52,3 +54,57 @@ button{
     top: 2%;
     left: 90%;
 }
+
+/*************section 2******/
+
+
+.brown{
+    outline: 3px solid brown;
+    color: brown;
+}
+
+.purple{
+    outline: 3px solid purple;
+    color: purple;
+}
+
+.red{
+    outline: 3px solid red;
+    color: red;
+}
+
+.yellow{
+    outline: 3px solid yellow;
+    color: yellow;
+}
+
+.blue{
+    outline: 3px solid blue;
+    color: blue;
+}
+
+.spaceventures{
+    h2{
+        span:first-of-type {
+            display: block;
+        }
+        span:nth-of-type(2) {
+            color: green;
+        }
+    }
+}
+
+.grey{
+    outline: 3px solid grey;
+    color: grey;
+}
+
+@media screen and (min-width: 1024px) {
+    .section2 {
+        display: flex;
+        gap: 100px;
+    }
+    .brown, .grey {
+        width: 50%;
+    }
+ }
