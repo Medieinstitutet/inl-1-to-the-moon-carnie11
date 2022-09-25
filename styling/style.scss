@@ -4,64 +4,80 @@
     display: table;
  }
 
-section{
-    min-height: 100vh;
 
-}
+/******************FIRST_PAGE******************/
+
 
 .section1{
     background-color: greenyellow;
+    position: relative;
     min-height: 100vh;
 }
-
-.section2{
-    background-color: blue;
-    min-height: 100vh;
-}
-
 
 header{
-   color:black;
-   background-color: cyan;
-   width: 100%;
-   height: 10%;
-}
-
-aside{
-    width: 220px;
-    height: 250px;
-}
-
-/***************POSITIONING***************/
-.section1{
+    color:black;
+    background-color: cyan;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+ }
+ 
+ aside{
     
-    position: relative;
-}
+     background-color: pink;
+     border: 4px solid black;
+     position: absolute;
+     padding: 20px;
+     margin-bottom: 0;
+     left: 50px;
+     top: 70px;
+     width: 220px;
+     height: 250px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-weight: 600;
+     font-size: 3rem;
+     text-align: center;
+     line-height: 60px;
+ }
 
-.section2{
-    background-color: rgb(159, 159, 201);
-    position: relative;
-}
-
-header{
+ .readourstory{
+    position: absolute;
+    min-width: 220px;
+    bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: left;
+    margin-bottom: 0;
    
-    position: absolute;
-}
+ }
 
-aside{
-    background-color: pink;
+ .pil{
     position: absolute;
-    left: 50px;
-    top: 70px;
-}
-
-button{
+    top: 17px;
+    width: 30px;
+    height: 30px;
+ }
+     
+ button{
     position: sticky;
     top: 2%;
     left: 90%;
 }
+ 
+/*********************************************/
+/*****************SECOND_PAGE*****************/
+/*********************************************/
 
-/*************section 2******/
+
+.section2{
+    background-color: rgb(123, 123, 175);
+    position: relative;
+    min-height: 100vh;
+}
+
+
+/*****************TEXT_BOXES*****************/
 
 
 .brown{
@@ -105,8 +121,6 @@ blockquote{
     display: none;
 
 }
-
-
 
 .blue{
     outline: 3px solid blue;
