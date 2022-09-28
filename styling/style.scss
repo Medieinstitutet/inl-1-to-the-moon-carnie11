@@ -4,35 +4,9 @@
     display: table;
  }
 
+ /**********************************************/
+/******************BOTH_PAGES******************/
 /**********************************************/
-/******************FIRST_PAGE******************/
-/**********************************************/
-
-.section1{
- 
-    background-image: url(../images/adam-miller-dBaz0xhCkPY-unsplash.jpg);
-    position: relative;
-    min-height: 100vh;
-    min-width: 100vh;
-    padding: 0;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 100%;
-    
-    
-}
-
-header{
-    
-    background-color: transparent;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    right: 0;
-   
- }
-
 
  .hamburgare{
     width: 35px;
@@ -44,7 +18,6 @@ header{
     right: 20px;
     z-index: 2;
     pointer-events: none;
-    
 }
 
 .hamburgare span{
@@ -93,10 +66,8 @@ nav{
     opacity: 0;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     visibility: hidden;
-
 }
 
-    
 .menu{
     min-width: 100vh;
 }
@@ -108,7 +79,12 @@ input:checked + .menu nav{
     visibility: visible;
 }
 
-
+input:checked + .section1.box{
+    z-index: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
 
 ul{
     margin: 0;
@@ -123,9 +99,31 @@ ul{
     font-size: 4rem;
     font-weight: 600;
     text-shadow: 0px 4px 2px gray;
-    
+}
+
+ul:hover{
+    list-style-type: underscore;
 
 }
+
+
+
+/**********************************************/
+/******************FIRST_PAGE******************/
+/**********************************************/
+
+.section1{
+ 
+    background-image: url(../images/adam-miller-dBaz0xhCkPY-unsplash.jpg);
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vh;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    }
 
 
 
@@ -196,16 +194,11 @@ ul{
 
 
 
-
-
-
 /*****************TEXT_BOXES*****************/
 
 
 .brown{
     outline: 3px solid brown;
-  
-    
 }
 
 .purple{
@@ -218,13 +211,21 @@ ul{
 }
 
 .gradientquote{
-   
-    outline: 3px solid red;
-    color: red;
+    
+    font-family: 'Rubik', 'sans-serif';
+    font-size: 2rem;
+    font-style: italic;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left, #da70d634, #e0dae05a,  #da70d631,);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip:none;
 }
 
 blockquote{
-   
     left: 30px;
     font-family: 'Rubik', sans-serif;
     font-size: 1.3rem;
@@ -234,14 +235,16 @@ blockquote{
     color: white;
     &::before, &::after {
         content: '"';
+        font-family:'Rubik' sans-serif;
         display: block;
         position: absolute;
-        font-size: 3rem;
+        font-size: 4rem;
     }
     &::before{
         
         top: -13px;
         left: -24px;
+        position: absolute;
     }
     &::after{
         bottom: -3px;
@@ -283,6 +286,7 @@ blockquote{
             color: white;
             align-content: center;
         }
+
         span:nth-of-type(2) {
             color: rgba(255, 255, 255, 0.582);
             position: relative;
@@ -318,6 +322,7 @@ blockquote{
         height: auto;
         float: right;
         transform: rotate(3deg);
+        bottom: 10px;
     }
     .gradientquote {
         display: block;
