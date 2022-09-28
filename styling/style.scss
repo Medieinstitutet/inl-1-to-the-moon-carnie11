@@ -109,11 +109,6 @@ ul{
     text-shadow: 0px 4px 2px gray;
 }
 
-ul:hover{
-    
-
-}
-
 
 
 /**********************************************/
@@ -205,9 +200,6 @@ ul:hover{
 /*****************TEXT_BOXES*****************/
 
 
-.brown{
-    outline: 3px solid brown;
-}
 
 .purple{
     padding: 20px;
@@ -248,7 +240,6 @@ blockquote{
         font-size: 4rem;
     }
     &::before{
-        
         top: -13px;
         left: -24px;
         position: absolute;
@@ -261,20 +252,18 @@ blockquote{
     }
 }
 
-
-
 .gradientquote{
     display: none;
 
 }
 
 .blue{
-    outline: 3px solid blue;
     padding: 20px;
     font-family: 'Rubik', sans-serif;
     color: white;
     font-size: 0.8rem;
     line-height: 20px;
+    outline: none;
 }
 
 .spaceventures{
@@ -307,7 +296,6 @@ blockquote{
 }
 
 .grey{
-    outline: 3px solid grey;
     color: grey;
 }
 
