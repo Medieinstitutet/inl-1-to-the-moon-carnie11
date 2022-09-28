@@ -8,7 +8,11 @@
 /******************BOTH_PAGES******************/
 /**********************************************/
 
- .hamburgare{
+.menu{
+    min-width: 100vh;
+}
+
+.hamburgare{
     width: 35px;
     height: 35px;
     background: transparent;
@@ -27,34 +31,46 @@
     background-color: black;
     border-radius: 6px;
     margin-bottom: 4px;
+    position: relative;
+    left:0;
+    transition: left 0.3s ease-in-out ;
 }
 
 input{
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 2;
+    z-index: 1;
     width: 35px;
     height: 35px;
     opacity: 0;
+    cursor: pointer;
 }
 
-input:checked + button span{
+
+input:hover + .hamburgare span:nth-child(2) {
+    left: -5px;
+  }
+
+
+input:checked + .hamburgare span{
     position: absolute;
     transition: all 0.3s ease-in-out;
 }
 
-input:checked + .menu button span:nth-child(2){
+input:checked + .hamburgare span:nth-child(2){
     opacity: 0;
 }
 
-input:checked + .menu button span:nth-child(1){
+input:checked +  .hamburgare span:nth-child(1){
     transform: rotate(45deg);   
 }
 
-input:checked + .menu button span:nth-child(3){
+input:checked +  .hamburgare span:nth-child(3){
     transform: rotate(-45deg);   
 }
+
+
 
 nav{
     position: fixed;
@@ -65,26 +81,18 @@ nav{
     height: 100vh;
     opacity: 0;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    visibility: hidden;
-}
-
-.menu{
-    min-width: 100vh;
+    visibility: 0;
 }
 
 
-input:checked + .menu nav{
-    display: block;
+input:checked + nav{
+   
     opacity: 1;
     visibility: visible;
+    
 }
 
-input:checked + .section1.box{
-    z-index: 0;
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-}
+
 
 ul{
     margin: 0;
@@ -102,7 +110,7 @@ ul{
 }
 
 ul:hover{
-    list-style-type: underscore;
+    
 
 }
 
@@ -306,6 +314,13 @@ blockquote{
 
 .majortom {
     display: none;
+}
+
+footer{
+    padding: 20px;
+    position: abs($number: 0);
+    font-family: 'Rubik', 'sans-serif';
+    background-color: rgba(0, 0, 139, 0.605);
 }
 
 @media screen and (min-width: 1024px) {
