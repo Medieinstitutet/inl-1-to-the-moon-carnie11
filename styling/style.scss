@@ -40,7 +40,7 @@ input{
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 1;
+    z-index: 2;
     width: 35px;
     height: 35px;
     opacity: 0;
@@ -62,6 +62,8 @@ input:checked +  .menu button span:nth-child(1){
 
 input:checked + .menu button span:nth-child(3){
     transform: rotate(-45deg);   
+
+    
 }
 
 nav{
@@ -80,6 +82,7 @@ input:checked + .menu nav{
     visibility: visible;
     opacity: 1;
     z-index: 1;
+   
 }
 
 ul{
@@ -98,12 +101,6 @@ ul{
     
     
 }
-
-
-input:hover + .hamburgare span:nth-child(2) {
-    left: -5px;
-  }
-
 
 
 /**********************************************/
@@ -241,7 +238,7 @@ blockquote{
         position: absolute;
     }
     &::after{
-        bottom: -3px;
+        bottom: -28px;
         right: 300px;
         position: absolute;
 
@@ -301,9 +298,39 @@ blockquote{
 
 footer{
     padding: 20px;
-    position: abs($number: 0);
+    width: 100vw;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(2, 2, 86, 0.605);
     font-family: 'Rubik', 'sans-serif';
-    background-color: rgba(0, 0, 139, 0.605);
+    font-size: 1.7ch;  
+    color:rgb(215, 65, 165);
+    animation: glow 1s ease-in-out infinite alternate;
+    visibility: hidden;
+}
+
+.accept{
+    width: 60px;
+    height: 25px;
+    border-radius: 2px;
+    background-color: rgba(2, 2, 158, 0.822);
+    font-family: 'Rubik', 'sans-serif';
+    font-weight: 500;
+    color: white;
+    font-size: 1.3ch;
+    position: absolute;
+    right: 10%;
+    
+}
+@keyframes glow{
+    from{
+        text-shadow: 0 0 20px rgb(215, 65, 165);
+    }
+    to{
+        text-shadow: 0 0 30px rgb(215, 65, 165),
+                     0 0 10px rgb(215, 65, 165);
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -331,8 +358,10 @@ footer{
     text-decoration-color: orchid;
     text-underline-offset: 10px;
     transition: 0.3s ease-in-out;
-    
+    }
 
+    footer{
+        visibility: visible;
     }
 
     
