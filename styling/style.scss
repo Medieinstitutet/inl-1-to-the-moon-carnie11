@@ -79,6 +79,7 @@ nav{
 input:checked + .menu nav{
     visibility: visible;
     opacity: 1;
+    z-index: 1;
 }
 
 ul{
@@ -94,6 +95,8 @@ ul{
     font-size: 4rem;
     font-weight: 600;
     text-shadow: 0px 4px 2px gray;
+    
+    
 }
 
 
@@ -322,6 +325,16 @@ footer{
     .gradientquote {
         display: block;
     }
+    li:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 7px;
+    text-decoration-color: orchid;
+    text-underline-offset: 10px;
+    transition: 0.3s ease-in-out;
+    
+
+    }
+
     
  }
 
