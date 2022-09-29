@@ -8,11 +8,11 @@
 /******************BOTH_PAGES******************/
 /**********************************************/
 
-.menu{
-    min-width: 100vh;
+.bothpages{
+    min-width: 100vw;
 }
 
-.hamburgare{
+button{
     width: 35px;
     height: 35px;
     background: transparent;
@@ -24,7 +24,7 @@
     pointer-events: none;
 }
 
-.hamburgare span{
+button span{
     display: block;
     width: 25px;
     height: 3px;
@@ -47,52 +47,39 @@ input{
     cursor: pointer;
 }
 
-
-input:hover + .hamburgare span:nth-child(2) {
-    left: -5px;
-  }
-
-
-input:checked + .hamburgare span{
+input:checked + .menu button span{
     position: absolute;
     transition: all 0.3s ease-in-out;
 }
 
-input:checked + .hamburgare span:nth-child(2){
+input:checked + .menu button span:nth-child(2){
     opacity: 0;
 }
 
-input:checked +  .hamburgare span:nth-child(1){
+input:checked +  .menu button span:nth-child(1){
     transform: rotate(45deg);   
 }
 
-input:checked +  .hamburgare span:nth-child(3){
+input:checked + .menu button span:nth-child(3){
     transform: rotate(-45deg);   
 }
-
-
 
 nav{
     position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(237, 227, 148, 0.6);
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     opacity: 0;
-    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-    visibility: 0;
+    transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    visibility: hidden;
 }
 
-
-input:checked + nav{
-   
-    opacity: 1;
+input:checked + .menu nav{
     visibility: visible;
-    
+    opacity: 1;
 }
-
-
 
 ul{
     margin: 0;
@@ -108,6 +95,11 @@ ul{
     font-weight: 600;
     text-shadow: 0px 4px 2px gray;
 }
+
+
+input:hover + .hamburgare span:nth-child(2) {
+    left: -5px;
+  }
 
 
 
@@ -236,6 +228,7 @@ blockquote{
         content: '"';
         font-family:'Rubik' sans-serif;
         display: block;
+        color: rgba(194, 193, 193, 0.442);
         position: absolute;
         font-size: 4rem;
     }
