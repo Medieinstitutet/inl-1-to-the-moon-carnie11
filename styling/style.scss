@@ -1,3 +1,5 @@
+@import 'normalize';
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -105,7 +107,6 @@ ul{
 /**********************************************/
 
 .section1{
- 
     background-image: url(../images/adam-miller-dBaz0xhCkPY-unsplash.jpg);
     position: relative;
     min-height: 100vh;
@@ -117,13 +118,12 @@ ul{
     background-position: 100%;
     }
 
-
-
  
- /***************TO_THE_MOON_BOX***************/
+/*********************************************/
+/******************MOON_BOX*******************/
+/*********************************************/
 
  aside{
-    
      background-color: rgba(255, 255, 255, 0.473);
      border: 4px solid black;
      position: absolute;
@@ -149,7 +149,6 @@ ul{
     font-weight: 200;
     text-align: left;
     margin-bottom: 0;
-   
  }
 
  .pil{
@@ -175,7 +174,6 @@ ul{
     height: 60px;
     width: 60px;
     color: white;
-    
  }
      
 
@@ -196,89 +194,17 @@ ul{
 
 
 
-/*****************TEXT_BOXES*****************/
+/*********************************************/
+/*****************TEXT_BOXES******************/
+/*********************************************/
 
-.tomheading{
-    font-size: 1.8rem;
-    font-weight: 400;
-    padding: none;
-    margin: none;
-    line-height: 2;
-}
 
-.purple{
+.containerfirstcol{
+    padding-right: 20px;
     padding-left: 10px;
-    line-height: 20px;
-    font-family:  'Rubik', sans-serif;
-    font-size: 0.8rem;
-    color: white;
+    padding-right: 20;
 }
 
-.gradientquote{
-    
-    font-family: 'Rubik', 'sans-serif';
-    font-size: 2rem;
-    font-style: italic;
-    padding:10px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to top left, #d200a1ae, #e0dae05a,  #d200a1aa, #e0dae05a, #d200a1b3, #e0dae05a);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip:none;
-}
-
-blockquote{
-    left: 30px;
-    height:40px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    position: relative;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    color: white;
-    &::before, &::after {
-        content: '"';
-        font-family:'Rubik' sans-serif;
-        display: block;
-        color: #d200a1bd;
-        font-size: 6rem;
-    }
-    &::before{
-        top: -16px;
-        left: -26px;
-        position: absolute;
-    }
-    &::after{
-        bottom: -12px;
-        left: 40px;
-        position: static;
-
-    }
-}
-
-.gradientquote{
-    display: none;
-
-}
-
-.blue{
-    padding:10px;
-    padding-right: 20px;
-    padding-top: 20px;
-    font-family: 'Rubik', sans-serif;
-    color: white;
-    font-size: 0.8rem;
-    line-height: 20px;
-    outline: none;
-}
-.tomlink{
-    color: #D200A2;
-
-}
 .spaceventures{
     position: relative;
     
@@ -308,21 +234,104 @@ blockquote{
     }
 }
 
-.grey{
+.firstparagraphpg2{
+    padding-left: 10px;
+    line-height: 20px;
+    font-family:  'Rubik', sans-serif;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.tomheading{
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: none;
+    margin: none;
+    line-height: 2;
+}
+
+blockquote{
+    left: 30px;
+    height:40px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: white;
+    &::before, &::after {
+        content: '"';
+        font-family:'Rubik' sans-serif;
+        display: block;
+        color: #d200a1bd;
+        font-size: 6rem;
+    }
+    &::before{
+        top: -16px;
+        left: -26px;
+        position: absolute;
+    }
+    &::after{
+        bottom: -12px;
+        left: 40px;
+        position: static;
+    }
+}
+
+.containersecondcol{
     padding-right: 20px;
     padding-left: 10px;
     padding-right: 20;
 }
 
-.brown{
+.gradientquote{
+    font-family: 'Rubik', 'sans-serif';
+    font-size: 2rem;
+    font-style: italic;
+    padding:10px;
     padding-right: 20px;
-    padding-left: 10px;
-    padding-right: 20;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left, #d200a1ae, #e0dae05a,  #d200a1aa, #e0dae05a, #d200a1b3, #e0dae05a);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip:none;
+}
+
+.gradientquote{
+    display: none;
+}
+
+.secondparagraphpg2{
+    padding:10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    line-height: 20px;
+    outline: none;
 }
 
 .majortom {
     display: none;
 }
+
+.tomlink{
+    color: #D200A2;
+
+}
+
+.pil2{
+    color: #D200A2;
+}
+ 
+/*********************************************/
+/*******************FOOTER********************/
+/*********************************************/
 
 footer{
     padding: 20px;
@@ -349,12 +358,12 @@ footer{
     font-size: 1.3ch;
     position: absolute;
     right: 10%;
-    
 }
 
-.pil2{
-    color: #D200A2;
-}
+ 
+/*********************************************/
+/******************TXT_BLING******************/
+/*********************************************/
 
 @keyframes glow{
     from{
@@ -403,9 +412,7 @@ footer{
 
     footer{
         visibility: visible;
-    }
-
-    
+    }    
  }
 
 
