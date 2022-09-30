@@ -198,7 +198,13 @@ ul{
 
 /*****************TEXT_BOXES*****************/
 
-
+.tomheading{
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: none;
+    margin: none;
+    line-height: 2;
+}
 
 .purple{
     padding-left: 10px;
@@ -226,6 +232,7 @@ ul{
 
 blockquote{
     left: 30px;
+    height:40px;
     font-family: 'Rubik', sans-serif;
     font-size: 1.3rem;
     font-style: italic;
@@ -238,18 +245,17 @@ blockquote{
         font-family:'Rubik' sans-serif;
         display: block;
         color: #d200a1bd;
-        position: absolute;
-        font-size: 4rem;
+        font-size: 6rem;
     }
     &::before{
-        top: -13px;
-        left: -24px;
+        top: -16px;
+        left: -26px;
         position: absolute;
     }
     &::after{
-        bottom: -28px;
-        right: 300px;
-        position: absolute;
+        bottom: -12px;
+        left: 40px;
+        position: static;
 
     }
 }
@@ -359,6 +365,10 @@ footer{
                      0 0 10px #D200A2;
     }
 }
+
+/*********************************************/
+/*****************MEDIA_QUERYS****************/
+/*********************************************/
 
 @media screen and (min-width: 1024px) {
     .section2 {
