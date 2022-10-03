@@ -72,7 +72,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(237, 227, 148, 0.6);
+    background-color: rgba(255, 255, 255, 0.608);
     width: 100vw;
     height: 100vh;
     opacity: 0;
@@ -188,8 +188,9 @@ ul{
     min-height: 100vh;
     background-image: url(../images/raphael-nogueira-svbDI1Pq30s-unsplash.jpg);
     background-size: 100%;
-    padding: 0;
     margin: 0;
+    gap: 10px;
+    border-bottom: 0;
 }
 
 
@@ -207,6 +208,8 @@ ul{
 
 .spaceventures{
     position: relative;
+    padding-top: 30px;
+    height: 140px;
     
     h2{
         margin-bottom: 0;
@@ -230,6 +233,7 @@ ul{
             z-index: 0;
             font-size: 4rem;
             align-content: center;
+            padding-bottom: 0;
         }
     }
 }
@@ -283,6 +287,7 @@ blockquote{
     padding-right: 20px;
     padding-left: 10px;
     padding-right: 20;
+    padding-bottom: 20px;
 }
 
 .gradientquote{
@@ -291,7 +296,8 @@ blockquote{
     font-style: italic;
     padding:10px;
     padding-right: 20px;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
