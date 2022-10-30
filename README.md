@@ -1,8 +1,13 @@
-# Inlämningsuppgift 2: To The Moon
-Se instruktioner för uppgiften på kurswebben.
 
-I `assets`-mappen hittar du briefen från kunden (beskrivningen på vad du ska göra), information om designen, bilder till uppgiften och texter till uppgiften.
 
-I `screenshots`-mappen lägger du skärmdumpar på din sajt, när du är klar och har testat och färdigställt den så att den fungerar i alla webbläsare.
+----------------------------
+---------TO THE MOON--------
+----------------------------
 
-I `validation-reports`-mappen lägger du PDF:er på dina valideringsrapporter på HTML och CSS.
+This was my first assignment at the Blockchain dev programme
+at Medieinstitutet Sthlm, sept 22. A mock up site for the fictive
+company "Space Ventures". We got a bit of a shady brief, 
+the texts and pictures, and were to design a semi functional 
+concept site using HTML/CSS only. Lots of fun!
+
+//Carolin Nielsen
